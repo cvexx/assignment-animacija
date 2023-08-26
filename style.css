@@ -1,0 +1,92 @@
+#wrapper {
+    position: relative;
+    margin: 200px auto;
+    width: 700px;
+    height: 500px;
+    background-color: #050210;
+
+}
+
+#krug-1 {
+    position: absolute;
+    top: 75px;
+    left: 175px;
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+    filter: blur(20px);
+    animation-name: animacija-1;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#krug-2 {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+    animation-name: animacija-2;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#krug-3 {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background-color: #050210;
+    transform: scale(0.85);
+}
+
+#krug-4 {
+    position: absolute;
+    top: 225px;
+    left: 325px;
+    width: 50px;
+    height: 50px;
+    background-color: #0c091d;
+    border-radius: 100%;
+    animation-name: animacija-3;
+    animation-duration: 1.4s;
+    animation-timing-function: cubic-bezier(0.45, 0.17, 0.34, 0.62);
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes animacija-1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animacija-2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+@keyframes animacija-3{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(5);
+    }
+}
